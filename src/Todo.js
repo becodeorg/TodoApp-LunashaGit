@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './Todo.scss';
 import { useState } from "react";
 import {v4 as uuidv4} from 'uuid';
+import {Bar} from './Bar';
 
 const Todo = () => {
   const initialTodos = ["My first todo", "My second todo"];
@@ -16,6 +17,7 @@ const Todo = () => {
           </li>
           ))}
       </ul>
+      <p>{todos.length} items left</p>
     </div>
   );
 }
