@@ -5,16 +5,14 @@ const Todo = () => {
   return (
     <div className="Todo">
       <h2>Todos</h2>
-      <div className="checkbox">
-        <label>
-        <input type="checkbox" />
-        Learn React
-        </label>
-        <label htmlFor="awesome">
-        <input name="awesome" type="checkbox" />
-        Be Awesome !
-        </label>
-      </div>
+      <ul className="checkbox">
+        <li>
+        <input type="checkbox" /> Learn React
+        </li>
+        <li>
+        <input name="awesome" type="checkbox" /> Be Awesome !
+        </li>
+      </ul>
     </div>
   );
 }
