@@ -1,0 +1,22 @@
+.Bar{
+    .input{
+        margin: 5rem 2rem;
+        input{
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 0.5rem;
+        }
+        button{
+            margin-top: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 0.5rem;
+            background: rgb(3, 136, 224);
+            color: white;
+        }
+    }
+    hr{
+        margin: 0 2rem;
+    }
+    
+}
