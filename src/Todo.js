@@ -1,25 +1,23 @@
 import logo from './logo.svg';
-import './Todo.scss';
 import { useState } from "react";
+import './Todo.scss';
 import {v4 as uuidv4} from 'uuid';
-import {Bar} from './Bar';
 
-const Todo = () => {
-  const initialTodos = ["My first todo", "My second todo"];
-	const [todos, setTodos] = useState(initialTodos);
+
+const Todo = ({todos}) => {
+  
   return (
-    <div className="Todo">
-      <h2>Todos</h2>
-      <ul className="checkbox">
+      <div className="Todo">
+        <h2>Todos</h2>
+        <ul className="checkbox">
           {todos.map((todo) => (
-          <li key={uuidv4()}>
-            <input type="checkbox" /> {todo}
-          </li>
+            <li key={uuidv4()}>
+              <input type="checkbox" /> {todo}
+            </li>
           ))}
-      </ul>
-      <p>{todos.length} items left</p>
-    </div>
+        </ul>
+        <p>{todos.length} items left</p>
+      </div>
   );
 }
-
 export default Todo;
