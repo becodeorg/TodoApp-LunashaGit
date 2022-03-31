@@ -30,5 +30,11 @@
         padding-inline-start: 0;
         font-family: 'Red Hat Mono', monospace;
         font-weight: 300;
+        li{
+            margin: 2rem;
+            border: black solid 1px;
+            border-radius: 3px;
+            z-index: 100;
+        }
     }
 }
