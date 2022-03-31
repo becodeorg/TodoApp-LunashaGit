@@ -1,11 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Red+Hat+Mono:wght@300;400;500&display=swap');
+
 .Todo{
-    margin: 0 2rem;
+    border: 2px solid #a0a0a0;
+    margin: 2rem auto;
+    max-width: 40rem;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: 'Red Hat Mono', monospace;
+    font-weight: 300;
+    h2{
+        font-size: 2rem;
+        margin: 1rem;
+        font-weight: 100;
+    }
+    button{
+        font-family: 'Red Hat Mono', monospace;
+        font-weight: 300;
+        font-size: 1.2rem;
+        background: white;
+        color: red;
+        border: 2px solid red;
+        border-radius: 3px;
+    }
     .checkbox{
         list-style-type: none;
         padding-inline-start: 0;
+        font-family: 'Red Hat Mono', monospace;
+        font-weight: 300;
     }
 }

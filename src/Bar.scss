@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Red+Hat+Mono:wght@300;400;500&display=swap');
 .Bar{
-    
+    border: 2px solid rgb(160, 160, 160);
+    margin: 0 auto;
+    max-width: 40rem;
+    border-radius: 5px;
     .input{
-        margin: 5rem 2rem;
+        margin: 2rem 0rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -9,6 +13,9 @@
             border: 1px solid #ccc;
             border-radius: 3px;
             padding: 0.5rem;
+            font-family: 'Red Hat Mono', monospace;
+            font-weight: 300;
+            font-size: 2rem;
         }
         button{
             border: 1px solid #ccc;
@@ -16,10 +23,13 @@
             padding: 0.5rem;
             background: rgb(3, 136, 224);
             color: white;
+            font-family: 'Red Hat Mono', monospace;
+            font-weight: 300;
+            font-size: 2rem;
+            cursor: pointer;
+
         }
     }
-    hr{
-        margin: 0 2rem;
-    }
+    
     
 }

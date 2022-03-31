@@ -5,19 +5,32 @@ import {v4 as uuidv4} from 'uuid';
   
   const Bar = ({addTodo}) => {
     const inputRef = useRef();
+    function handleKeyPress(event){
+      if(event.key === 'Enter'){
+        const inputElement = inputRef.current;
+        if(inputElement.value == '') {
+          alert('Please enter a todo');
+        }else {
+          addTodo(inputElement.value);
+          inputElement.value = '';
+        }
+      }
+    }
     function handleClick() {
     const inputElement = inputRef.current;
-      console.log(inputElement.value);
-      addTodo(inputElement.value);
-      inputElement.value = '';
+      if(inputElement.value == '') {
+        alert('Please enter a todo');
+      }else {
+        addTodo(inputElement.value);
+        inputElement.value = '';
+      }
   }
   return (
     <div className="Bar">
       <div className="input">
-        <input ref={inputRef} type="text" placeholder='Type a new todo' />
+        <input onKeyPress={handleKeyPress} ref={inputRef} type="text" placeholder='Type a new todo' />
         <button onClick={handleClick}>Add Todo</button>
       </div>
-      <hr />
     </div>
   );
 }

@@ -7,9 +7,10 @@ import {v4 as uuidv4} from 'uuid';
 const Todo = ({todos, setTodos}) => {
   return (
       <div className="Todo">
+        <h2>TodoList</h2>
         <button onClick={
           () => {
-            if(window.confirm('Are you sure you want to delete all todos?')) {
+            if(window.confirm(' !!! Are you sure you want to delete all todos? !!! \n This action cannot be undone.')) {
             setTodos([]);
           }
         }}>Clean the list</button>

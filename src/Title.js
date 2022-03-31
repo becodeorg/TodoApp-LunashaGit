@@ -23,7 +23,6 @@ const Title = () => {
   return (
     <div className="Title">
       <h1>Todos</h1>
-      <hr />
       <Bar addTodo={addTodo}/>
       <Todo setTodos={setTodos} todos={todos} />
     </div>
