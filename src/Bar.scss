@@ -1,13 +1,16 @@
 .Bar{
+    
     .input{
         margin: 5rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         input{
             border: 1px solid #ccc;
             border-radius: 3px;
             padding: 0.5rem;
         }
         button{
-            margin-top: 1rem;
             border: 1px solid #ccc;
             border-radius: 3px;
             padding: 0.5rem;

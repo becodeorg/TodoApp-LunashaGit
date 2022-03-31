@@ -9,12 +9,12 @@ import {v4 as uuidv4} from 'uuid';
     const inputElement = inputRef.current;
       console.log(inputElement.value);
       addTodo(inputElement.value);
+      inputElement.value = '';
   }
   return (
     <div className="Bar">
       <div className="input">
         <input ref={inputRef} type="text" placeholder='Type a new todo' />
-        <br />
         <button onClick={handleClick}>Add Todo</button>
       </div>
       <hr />

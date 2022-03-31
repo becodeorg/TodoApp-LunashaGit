@@ -4,11 +4,15 @@ import './Todo.scss';
 import {v4 as uuidv4} from 'uuid';
 
 
-const Todo = ({todos}) => {
-  
+const Todo = ({todos, setTodos}) => {
   return (
       <div className="Todo">
-        <h2>Todos</h2>
+        <button onClick={
+          () => {
+            if(window.confirm('Are you sure you want to delete all todos?')) {
+            setTodos([]);
+          }
+        }}>Clean the list</button>
         <ul className="checkbox">
           {todos.map((todo) => (
             <li key={uuidv4()}>

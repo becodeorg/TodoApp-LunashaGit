@@ -6,7 +6,7 @@ import {v4 as uuidv4} from 'uuid';
 import { useState, useEffect } from "react";
 const LSKEY = 'MyTodoApp';
 const Title = () => {
-  let initialTodos = ["Test","A","B","C","D"];
+  let initialTodos = [];
   const [todos, setTodos] = useState(() => {
     initialTodos = JSON.parse(localStorage.getItem(LSKEY + ".todos"));
     return initialTodos || [];
@@ -20,14 +20,12 @@ const Title = () => {
     window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
   },[todos]);
 
-  
-
   return (
     <div className="Title">
-      <h1>My Todo App</h1>
+      <h1>Todos</h1>
       <hr />
       <Bar addTodo={addTodo}/>
-      <Todo todos={todos} />
+      <Todo setTodos={setTodos} todos={todos} />
     </div>
   );
 }
