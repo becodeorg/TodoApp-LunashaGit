@@ -3,12 +3,12 @@ import './Bar.scss';
 import { useRef, useEffect ,useState } from "react";
 import {v4 as uuidv4} from 'uuid';
   
-  const Bar = ({todos, setTodos}) => {
+  const Bar = ({addTodo}) => {
     const inputRef = useRef();
     function handleClick() {
     const inputElement = inputRef.current;
       console.log(inputElement.value);
-      setTodos([...todos, inputElement.value]);
+      addTodo(inputElement.value);
   }
   return (
     <div className="Bar">
