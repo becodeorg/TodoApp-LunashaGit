@@ -6,7 +6,7 @@ import {v4 as uuidv4} from 'uuid';
 let LSKEY = 'MyTodoApp';
 
 
-const Todo = ({todos, setTodos, setStatus, filteredTodos}) => {
+const Todo = ({todos, completeTodo, setTodos, setStatus, filteredTodos}) => {
   /* let ChangeText = (event) => {
       const rename = window.prompt("Please enter a new name", event.target.textContent);
       if(rename) {
@@ -33,10 +33,17 @@ const Todo = ({todos, setTodos, setStatus, filteredTodos}) => {
   }
   
   const statusHandler = (e) => {
-    console.log(e.target.value);
     setStatus(e.target.value)
   }
-
+  /* const liCompleted = (e) => {
+    setTodos(todos.map(item =>{
+          return{
+            ...item, completed: !item.completed,
+          }
+    })) 
+    }
+    */
+  
   return (
       <div className="Todo">
         <h2>TodoList</h2>
@@ -48,8 +55,8 @@ const Todo = ({todos, setTodos, setStatus, filteredTodos}) => {
         }}>Clean the list</button>
         <ul className="checkbox">
           {filteredTodos.map(todo => (
-            <li className='all' key={uuidv4()}>
-              <input name="checkbox" type="checkbox" /> 
+            <li onClick={() => completeTodo(todo)} key={todo.id}>
+              <input  name="checkbox" type="checkbox" /> 
               <label  htmlFor="checkbox">
                {todo.todo}
               </label>
@@ -57,7 +64,7 @@ const Todo = ({todos, setTodos, setStatus, filteredTodos}) => {
             </li>
           ))}
         </ul>
-          <p>{todos.length} items left</p>
+          <p>{filteredTodos.length} items left</p>
         <div className="footer">
           <select onChange={statusHandler} className="filter-todo">
             <option value="all">All</option>

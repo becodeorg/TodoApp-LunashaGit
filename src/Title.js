@@ -7,14 +7,12 @@ import { useState, useEffect } from "react";
 let LSKEY = 'MyTodoApp';
 const Title = () => {
   let initialTodos = [];
-  
   const [todos, setTodos] = useState(() => {
     initialTodos = JSON.parse(localStorage.getItem(LSKEY + ".todos"));
     return initialTodos || [];
   });
   const [status, setStatus] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([])
-  
   const filterHandler = () => { 
     switch(status){
       case 'completed':
@@ -31,18 +29,23 @@ const Title = () => {
   function addTodo(todo) {
     setTodos([...todos, { id: uuidv4(), todo, completed: false }]);
   }
-
+  
+  const completeTodo = (todo => {
+    setTodos( [...todos, todo.completed = !todo.completed])
+  })
+  
   useEffect(() => {
     window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
   },[todos]);
   useEffect(() => {
     filterHandler();
   }, [todos,status]);
+  
   return (
     <div className="Title">
       <h1>Todos</h1>
       <Bar addTodo={addTodo}/>
-      <Todo setStatus={setStatus} setTodos={setTodos} todos={todos} filteredTodos={filteredTodos}/>
+      <Todo completeTodo={completeTodo} setStatus={setStatus} setTodos={setTodos} todos={todos} filteredTodos={filteredTodos}/>
     </div>
   );
 }
