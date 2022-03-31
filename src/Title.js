@@ -4,7 +4,7 @@ import Todo from './Todo';
 import Bar from './Bar';
 import {v4 as uuidv4} from 'uuid';
 import { useState, useEffect } from "react";
-const LSKEY = 'MyTodoApp';
+let LSKEY = 'MyTodoApp';
 const Title = () => {
   let initialTodos = [];
   const [todos, setTodos] = useState(() => {
