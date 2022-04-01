@@ -30,10 +30,13 @@ const Title = () => {
     setTodos([...todos, { id: uuidv4(), todo, completed: false }]);
   }
   
-  const completeTodo = (todo => {
-    setTodos( [...todos, todo.completed = !todo.completed])
-  })
-  
+  const completeTodo = (todo) => {
+    let goodTodo = todos.find(x => x.id === todo.id)
+    goodTodo.completed = !goodTodo.completed;
+    setTodos([...todos])
+    
+  }
+
   useEffect(() => {
     window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
   },[todos]);

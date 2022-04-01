@@ -60,7 +60,6 @@ const Todo = ({todos, completeTodo, setTodos, setStatus, filteredTodos}) => {
               <label  htmlFor="checkbox">
                {todo.todo}
               </label>
-              
             </li>
           ))}
         </ul>
