@@ -28,12 +28,6 @@ const Todo = ({todos, completeTodo, setTodos, setStatus, filteredTodos}) => {
   return (
       <div className="Todo">
         <h2>TodoList</h2>
-        <button onClick={
-          () => {
-            if(window.confirm(' !!! Are you sure you want to delete all todos? !!! \n This action cannot be undone.')) {
-            setTodos([]);
-          }
-        }}>Clean the list</button>
         <ul className="checkbox">
           {filteredTodos.map(todo => (
             <li key={todo.id}>
@@ -45,10 +39,16 @@ const Todo = ({todos, completeTodo, setTodos, setStatus, filteredTodos}) => {
           ))}
         </ul>
         <div className="footer">
-            <p>{filteredTodos.length} items left</p>
-            <button onClick={statusHandler} value="all">All</button>
-            <button onClick={statusHandler} value="completed">Completed</button>
-            <button onClick={statusHandler} value="uncompleted">Uncompleted</button>
+          <p>{filteredTodos.length} items left</p>
+          <button onClick={
+            () => {
+              if(window.confirm(' !!! Are you sure you want to delete all todos? !!! \n This action cannot be undone.')) {
+              setTodos([]);
+            }
+          }}>Clean</button>
+          <button onClick={statusHandler} value="all">All</button>
+          <button onClick={statusHandler} value="completed">Completed</button>
+          <button onClick={statusHandler} value="uncompleted">Uncompleted</button>
         </div>
       </div>
   );
