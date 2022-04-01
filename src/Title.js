@@ -4,15 +4,20 @@ import Todo from './Todo';
 import Bar from './Bar';
 import {v4 as uuidv4} from 'uuid';
 import { useState, useEffect } from "react";
+
 let LSKEY = 'MyTodoApp';
+
 const Title = () => {
   let initialTodos = [];
+
   const [todos, setTodos] = useState(() => {
     initialTodos = JSON.parse(localStorage.getItem(LSKEY + ".todos"));
     return initialTodos || [];
   });
+
   const [status, setStatus] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([])
+
   const filterHandler = () => { 
     switch(status){
       case 'completed':
@@ -26,7 +31,7 @@ const Title = () => {
     }
   }
   
-  function addTodo(todo) {
+  const addTodo = (todo) => {
     setTodos([...todos, { id: uuidv4(), todo, completed: false }]);
   }
   
