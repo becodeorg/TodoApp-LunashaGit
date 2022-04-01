@@ -21,21 +21,30 @@
         font-weight: 300;
         font-size: 1.2rem;
         background: white;
-        color: red;
-        border: 2px solid red;
+        color: grey;
+        border: 2px solid grey;
         border-radius: 3px;
         margin: 1rem 0.5rem;
+    }
+    .footer{
+        text-align: center;
     }
     .checkbox{
         list-style-type: none;
         padding-inline-start: 0;
         font-family: 'Red Hat Mono', monospace;
         font-weight: 300;
+        input{
+            cursor: pointer;
+        }
+        label{
+            font-size: 1.4rem;
+        }
         li{
             margin: 2rem;
             border: black solid 1px;
             border-radius: 3px;
-            z-index: 100;
+            padding: 2rem 12rem;
         }
     }
 }

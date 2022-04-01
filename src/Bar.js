@@ -5,7 +5,7 @@ import {v4 as uuidv4} from 'uuid';
   
   const Bar = ({addTodo}) => {
     const inputRef = useRef();
-    function handleKeyPress(event){
+    const handleKeyPress = (event) => {
       if(event.key === 'Enter'){
         const inputElement = inputRef.current;
         if(inputElement.value == '') {
@@ -16,7 +16,7 @@ import {v4 as uuidv4} from 'uuid';
         }
       }
     }
-    function handleClick() {
+    const handleClick = () => {
     const inputElement = inputRef.current;
       if(inputElement.value == '') {
         alert('Please enter a todo');
