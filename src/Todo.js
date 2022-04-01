@@ -35,14 +35,6 @@ const Todo = ({todos, completeTodo, setTodos, setStatus, filteredTodos}) => {
   const statusHandler = (e) => {
     setStatus(e.target.value)
   }
-  /* const liCompleted = (e) => {
-    setTodos(todos.map(item =>{
-          return{
-            ...item, completed: !item.completed,
-          }
-    })) 
-    }
-    */
   
   return (
       <div className="Todo">
@@ -55,8 +47,8 @@ const Todo = ({todos, completeTodo, setTodos, setStatus, filteredTodos}) => {
         }}>Clean the list</button>
         <ul className="checkbox">
           {filteredTodos.map(todo => (
-            <li onClick={() => completeTodo(todo)} key={todo.id}>
-              <input  name="checkbox" type="checkbox" /> 
+            <li key={todo.id}>
+              <input  onChange={() => completeTodo(todo)} name="checkbox" type="checkbox" /> 
               <label  htmlFor="checkbox">
                {todo.todo}
               </label>
