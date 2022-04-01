@@ -21,17 +21,6 @@ const Todo = ({todos, completeTodo, setTodos, setStatus, filteredTodos}) => {
     window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
   },[todos]); */
   
-  const handleClick = (event) => {
-    console.log(event.target)
-    if(event.target.classList.contains('all')) {
-    event.target.classList.remove('all');
-    event.target.classList.add('active');
-    }else if(event.target.classList.contains('active')) {
-      event.target.classList.remove('active');
-      event.target.classList.add('completed');
-    }
-  }
-  
   const statusHandler = (e) => {
     setStatus(e.target.value)
   }
@@ -55,13 +44,11 @@ const Todo = ({todos, completeTodo, setTodos, setStatus, filteredTodos}) => {
             </li>
           ))}
         </ul>
-          <p>{filteredTodos.length} items left</p>
         <div className="footer">
-          <select onChange={statusHandler} className="filter-todo">
-            <option value="all">All</option>
-            <option value="completed">Completed</option>
-            <option value="uncompleted">Uncompleted</option>
-          </select>
+            <p>{filteredTodos.length} items left</p>
+            <button onClick={statusHandler} value="all">All</button>
+            <button onClick={statusHandler} value="completed">Completed</button>
+            <button onClick={statusHandler} value="uncompleted">Uncompleted</button>
         </div>
       </div>
   );
