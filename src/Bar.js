@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './Bar.scss';
-import { useRef, useEffect ,useState } from "react";
-import {v4 as uuidv4} from 'uuid';
+import { useRef } from "react";
   
   const Bar = ({addTodo}) => {
     const inputRef = useRef();

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './Title.scss';
 import Todo from './Todo';
 import Bar from './Bar';
@@ -54,6 +53,7 @@ const Title = () => {
   useEffect(() => {
     window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
   },[todos]);
+  
   useEffect(() => {
     filterHandler();
   }, [todos,status]);

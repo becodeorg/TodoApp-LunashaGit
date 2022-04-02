@@ -1,9 +1,4 @@
-import logo from './logo.svg';
-import Rename from './Rename.png';
-import { useEffect, useRef, useState } from "react";
 import './Todo.scss';
-import {v4 as uuidv4} from 'uuid';
-let LSKEY = 'MyTodoApp';
 
 
 const Todo = ({changeTodo, todos, completeTodo, setTodos, setStatus, filteredTodos}) => {
