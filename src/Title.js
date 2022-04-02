@@ -42,6 +42,15 @@ const Title = () => {
     
   }
 
+  const changeTodo = (todo) => {
+    const rename = window.prompt("Please enter a new name", todo.todo);
+    let goodTodo = todos.find(x => x.id === todo.id)
+    if(rename){
+      goodTodo.todo = rename;
+      goodTodo.todo = todo.todo;
+      setTodos([...todos])
+    }
+  }
   useEffect(() => {
     window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
   },[todos]);
@@ -53,7 +62,7 @@ const Title = () => {
     <div className="Title">
       <h1>Todos</h1>
       <Bar addTodo={addTodo}/>
-      <Todo completeTodo={completeTodo} setStatus={setStatus} setTodos={setTodos} todos={todos} filteredTodos={filteredTodos}/>
+      <Todo changeTodo={changeTodo} completeTodo={completeTodo} setStatus={setStatus} setTodos={setTodos} todos={todos} filteredTodos={filteredTodos}/>
     </div>
   );
 }

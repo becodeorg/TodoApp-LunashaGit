@@ -6,21 +6,11 @@ import {v4 as uuidv4} from 'uuid';
 let LSKEY = 'MyTodoApp';
 
 
-const Todo = ({todos, completeTodo, setTodos, setStatus, filteredTodos}) => {
+const Todo = ({changeTodo, todos, completeTodo, setTodos, setStatus, filteredTodos}) => {
   /* let ChangeText = (event) => {
-      const rename = window.prompt("Please enter a new name", event.target.textContent);
-      if(rename) {
-        event.target.textContent = rename;
-    }
+      
   } */
-  /* todos.map((todo) => {
-    console.log(todo)
-  }) */
 
-  /* useEffect(() => {
-    window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
-  },[todos]); */
-  
   const statusHandler = (e) => {
     setStatus(e.target.value)
   }
@@ -32,7 +22,7 @@ const Todo = ({todos, completeTodo, setTodos, setStatus, filteredTodos}) => {
           {filteredTodos.map(todo => (
             <li key={todo.id}>
               <input  onChange={() => completeTodo(todo)} name="checkbox" type="checkbox" /> 
-              <label  htmlFor="checkbox">
+              <label onDoubleClick={() => changeTodo(todo)}htmlFor="checkbox">
                {todo.todo}
               </label>
             </li>
