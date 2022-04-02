@@ -31,12 +31,13 @@ const Title = () => {
   }
   
   const addTodo = (todo) => {
-    setTodos([...todos, { id: uuidv4(), todo, completed: false }]);
+    setTodos([...todos, { id: uuidv4(), todo, completed: false, checked: false}]);
   }
   
   const completeTodo = (todo) => {
     let goodTodo = todos.find(x => x.id === todo.id)
     goodTodo.completed = !goodTodo.completed;
+    goodTodo.checked = !goodTodo.checked;
     setTodos([...todos])
     
   }

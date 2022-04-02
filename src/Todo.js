@@ -13,7 +13,7 @@ const Todo = ({changeTodo, todos, completeTodo, setTodos, setStatus, filteredTod
         <ul className="checkbox">
           {filteredTodos.map(todo => (
             <li key={todo.id}>
-              <input onChange={() => completeTodo(todo)} name="checkbox" type="checkbox" /> 
+              <input checked={todo.checked} onChange={() => completeTodo(todo)} name="checkbox" type="checkbox" /> 
               <label onDoubleClick={() => changeTodo(todo)}htmlFor="checkbox">
                {todo.todo}
               </label>
