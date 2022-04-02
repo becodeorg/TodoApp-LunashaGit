@@ -39,6 +39,13 @@ TodoList with React By Lunasha
 
 ## And about States ?
     Lunasha: Take your time for understand the states & how they work !
+## Technologies used ?
+<img src="https://img.shields.io/badge/REACT-blue?logo=react">
+<img src="https://img.shields.io/badge/Javascript-yellow?logo=javascript">
+<img src="https://img.shields.io/badge/NodeJS-green?logo=node.js">
+<img src="https://img.shields.io/badge/HTML5-orange?logo=HTML5">
+<img src="https://img.shields.io/badge/SASS-pink?logo=sass">
+
 
 ## Functionnalities about your TodoList ?
     Add a Task => Add Bar + Button add ( Or Enter to add the task )
@@ -52,11 +59,4 @@ TodoList with React By Lunasha
     Uncompleted => View uncompleted tasks
 
     And more later...
-
-## Technologies used ?
-<img src="https://img.shields.io/badge/REACT-blue?logo=react">
-<img src="https://img.shields.io/badge/Javascript-yellow?logo=javascript">
-<img src="https://img.shields.io/badge/NodeJS-green?logo=node.js">
-<img src="https://img.shields.io/badge/HTML5-orange?logo=HTML5">
-<img src="https://img.shields.io/badge/SASS-pink?logo=sass">
 
