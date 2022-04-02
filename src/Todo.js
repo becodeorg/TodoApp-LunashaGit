@@ -7,9 +7,6 @@ let LSKEY = 'MyTodoApp';
 
 
 const Todo = ({changeTodo, todos, completeTodo, setTodos, setStatus, filteredTodos}) => {
-  /* let ChangeText = (event) => {
-      
-  } */
 
   const statusHandler = (e) => {
     setStatus(e.target.value)
@@ -21,7 +18,7 @@ const Todo = ({changeTodo, todos, completeTodo, setTodos, setStatus, filteredTod
         <ul className="checkbox">
           {filteredTodos.map(todo => (
             <li key={todo.id}>
-              <input  onChange={() => completeTodo(todo)} name="checkbox" type="checkbox" /> 
+              <input onChange={() => completeTodo(todo)} name="checkbox" type="checkbox" /> 
               <label onDoubleClick={() => changeTodo(todo)}htmlFor="checkbox">
                {todo.todo}
               </label>
