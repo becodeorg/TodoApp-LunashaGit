@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+TodoList with React By Lunasha
+===
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What's your opinion about React ?
+    Lunasha : Yeah, it's my first Time with React.
+              But, since the beginning, React is really easy.
+              Just take the time to understand Function VS Class & States.
+              States at the beginning, is not really easy ! With work, yep !
+              React is really great. Normally, i don't like the front...
+              And here i liked... What's wrong with React & Me ???
 
-## Available Scripts
+## Why did this project ?
+    Lunasha : For BeCode, they gave us this project for the first time with React !
+              Thanks BeCode for this project & this discovery!
+              React Dev Soon??? ( No, i'm joking ! )
 
-In the project directory, you can run:
+## Anything to say about Function VS Class?
+    Lunasha:  Generally if the compenant, we use class for give more property
 
-### `npm start`
+              A compenent render() method takes no argument 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+              ReactDOM.RENDER need to take argument to work 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+              If you want to use class for a render, generally you need to export this
 
-### `npm test`
+              The function can did inside the global & is more flexible if you need to update this
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+              Render simple create a virtual dom and don't put inside the DOM browser
 
-### `npm run build`
+              ReactDOM.Render create a virtual dom and put inside the DOM browser
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+              ReactDOM.Render => ReactDOMCLient since React 18 ( 29 March 2022 )
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+              ( Hey to my coach btw, She will recognize herself 😊 )
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Class Image](./imgMD/class.png)
 
-### `npm run eject`
+![Function Image](./imgMD/function.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## And about States ?
+    Lunasha: Take your time for understand the states & how they work !
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Functionnalities about your TodoList ?
+    Add a Task => Add Bar + Button add ( Or Enter to add the task )
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    Check a task => Click on the Square
+    Rename a task => Double click on the Name of Task
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    Clean => Delete ALL tasks in the list
+    All => View all tasks
+    Completed => View completed tasks
+    Uncompleted => View uncompleted tasks
 
-## Learn More
+    And more later...
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies used ?
+<img src="https://img.shields.io/badge/REACT-blue?logo=react">
+<img src="https://img.shields.io/badge/Javascript-yellow?logo=javascript">
+<img src="https://img.shields.io/badge/NodeJS-green?logo=node.js">
+<img src="https://img.shields.io/badge/HTML5-orange?logo=HTML5">
+<img src="https://img.shields.io/badge/SASS-pink?logo=sass">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
