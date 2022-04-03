@@ -16,7 +16,11 @@ const Todo = ({changeTodo, todos, completeTodo, setTodos, setStatus, filteredTod
               <label onDoubleClick={() => changeTodo(todo)}htmlFor="checkbox">
                {todo.todo}
               </label>
-              <button className="deleteButton" onClick={() => setTodos(todos.filter(x => x.id !== todo.id))}>Delete</button>
+              <button className="deleteButton" onClick={() => {
+                if(window.confirm(" !!! Are you sure ? Do you want to delete this todo ? !!! \n This action cannot be undone.")){
+                  setTodos(todos.filter(x => x.id !== todo.id))
+                }
+              }}>Delete</button>
               <hr />
             </li>
           ))}
@@ -30,7 +34,7 @@ const Todo = ({changeTodo, todos, completeTodo, setTodos, setStatus, filteredTod
           </div>
           <button onClick={
             () => {
-              if(window.confirm(' !!! Are you sure you want to delete all todos? !!! \n This action cannot be undone.')) {
+              if(window.confirm(' !!! Are you sure ? Do you want to delete all todos? !!! \n This action cannot be undone.')) {
               setTodos([]);
             }
           }}>Clean</button>
