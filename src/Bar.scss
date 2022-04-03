@@ -3,23 +3,28 @@
     border: 2px solid rgb(160, 160, 160);
     margin: 0 auto;
     max-width: 40rem;
-    border-radius: 5px;
+    border-radius: 1px;
     .input{
-        margin: 2rem 0rem;
+        margin: 0.2rem 0rem;
         display: flex;
         align-items: center;
         justify-content: center;
         input{
-            border: 1px solid #ccc;
-            border-radius: 3px;
+            border: 0px solid #ccc;
+            border-radius: 1px;
             padding: 0.5rem;
             font-family: 'Red Hat Mono', monospace;
             font-weight: 300;
+            font-style: italic;
             font-size: 2rem;
+            width: 34rem;
+            &:focus{
+                outline:none;
+            }
         }
         button{
             border: 1px solid #ccc;
-            border-radius: 3px;
+            border-radius: 1px;
             padding: 0.5rem;
             background: rgb(3, 136, 224);
             color: white;

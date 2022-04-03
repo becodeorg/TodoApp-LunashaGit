@@ -61,7 +61,7 @@ const Title = () => {
   
   return (
     <div className="Title">
-      <h1>Todos</h1>
+      <h1>todos</h1>
       <Bar addTodo={addTodo}/>
       <Todo changeTodo={changeTodo} completeTodo={completeTodo} setStatus={setStatus} setTodos={setTodos} todos={todos} filteredTodos={filteredTodos}/>
     </div>

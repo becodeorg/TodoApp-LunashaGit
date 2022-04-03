@@ -28,7 +28,7 @@ import { useRef } from "react";
   return (
     <div className="Bar">
       <div className="input">
-        <input onKeyPress={handleKeyPress} ref={inputRef} type="text" placeholder='Type a new todo' />
+        <input onKeyPress={handleKeyPress} ref={inputRef} type="text" placeholder='What need to be done?' />
         <button onClick={handleClick}>Add</button>
       </div>
     </div>
