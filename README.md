@@ -50,13 +50,18 @@ TodoList with React By Lunasha
 ## Functionnalities about your TodoList ?
     Add a Task => Add Bar + Button add ( Or Enter to add the task )
 
-    Check a task => Click on the Square
+    Check a task => Click on the Circle
     Rename a task => Double click on the Name of Task
 
+    Delete => Delete the task in the line
     Clean => Delete ALL tasks in the list
+
     All => View all tasks
     Completed => View completed tasks
     Uncompleted => View uncompleted tasks
 
     And more later...
+
+## Design 
+![Design TodoList](./imgMD/design.png)
 
