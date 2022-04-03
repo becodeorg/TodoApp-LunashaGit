@@ -16,6 +16,7 @@ const Todo = ({changeTodo, todos, completeTodo, setTodos, setStatus, filteredTod
               <label onDoubleClick={() => changeTodo(todo)}htmlFor="checkbox">
                {todo.todo}
               </label>
+              <button className="deleteButton" onClick={() => setTodos(todos.filter(x => x.id !== todo.id))}>Delete</button>
               <hr />
             </li>
           ))}
