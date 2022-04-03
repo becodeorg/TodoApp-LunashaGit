@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/hamilton-6-react-intro-LunashaGit/static/css/main.42d4ae0f.css",
-    "main.js": "/hamilton-6-react-intro-LunashaGit/static/js/main.f3fc8492.js",
+    "main.css": "/hamilton-6-react-intro-LunashaGit/static/css/main.76548b92.css",
+    "main.js": "/hamilton-6-react-intro-LunashaGit/static/js/main.f864f079.js",
     "static/js/787.36ea19e1.chunk.js": "/hamilton-6-react-intro-LunashaGit/static/js/787.36ea19e1.chunk.js",
     "index.html": "/hamilton-6-react-intro-LunashaGit/index.html",
-    "main.42d4ae0f.css.map": "/hamilton-6-react-intro-LunashaGit/static/css/main.42d4ae0f.css.map",
-    "main.f3fc8492.js.map": "/hamilton-6-react-intro-LunashaGit/static/js/main.f3fc8492.js.map",
+    "main.76548b92.css.map": "/hamilton-6-react-intro-LunashaGit/static/css/main.76548b92.css.map",
+    "main.f864f079.js.map": "/hamilton-6-react-intro-LunashaGit/static/js/main.f864f079.js.map",
     "787.36ea19e1.chunk.js.map": "/hamilton-6-react-intro-LunashaGit/static/js/787.36ea19e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.42d4ae0f.css",
-    "static/js/main.f3fc8492.js"
+    "static/css/main.76548b92.css",
+    "static/js/main.f864f079.js"
   ]
 }
