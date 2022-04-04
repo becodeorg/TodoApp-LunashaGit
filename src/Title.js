@@ -3,6 +3,7 @@ import Todo from './Todo';
 import Bar from './Bar';
 import {v4 as uuidv4} from 'uuid';
 import { useState, useEffect } from "react";
+import { Route } from 'react-router'
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import useKonami from 'use-konami';
 import EasterEggSardoche from './SardocheEasterEgg.mp3'
@@ -52,7 +53,11 @@ const Title = () => {
   const [status, setStatus] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([])
 
-  const [theme, setTheme] = useState({mode: 'light'})
+  function getInitialTheme() {
+    const savedTheme = localStorage.getItem(LSKEY + ".theme") 
+    return savedTheme ? JSON.parse(savedTheme) : { mode: 'light' }
+  }
+  const [theme, setTheme] = useState(getInitialTheme)
 
   const filterHandler = () => { 
     switch(status){
@@ -96,11 +101,22 @@ const Title = () => {
     });
     
   }
+  const LumosMaxima = () => { 
+    useKonami({
+      onUnlock: () => window.location.href = "https://www.youtube.com/watch?v=pv3o4ucFExU",
+      sequence: ['l','u','m','o','s','m','a','x','i','m','a'],
+    });
+    
+  }
 
   useEffect(() => {
     window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
   },[todos]);
   
+  useEffect(() => {
+    window.localStorage.setItem(LSKEY + ".theme", JSON.stringify(theme));
+  },[theme]);
+
   useEffect(() => {
     filterHandler();
   }, [todos,status]);
@@ -111,6 +127,7 @@ const Title = () => {
       <GlobalStyle />
         <div className="Title">
           <EasterEgg />
+          <LumosMaxima />
           <h1>todos</h1>
           <Bar addTodo={addTodo}/>
           <Todo changeTodo={changeTodo} completeTodo={completeTodo} setStatus={setStatus} setTodos={setTodos} todos={todos} filteredTodos={filteredTodos}/>
