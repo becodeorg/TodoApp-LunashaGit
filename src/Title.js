@@ -4,6 +4,10 @@ import Bar from './Bar';
 import {v4 as uuidv4} from 'uuid';
 import { useState, useEffect } from "react";
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import useKonami from 'use-konami';
+import EasterEggSardoche from './SardocheEasterEgg.mp3'
+
+const Sardoche = new Audio(EasterEggSardoche)
 
 const GlobalStyle = createGlobalStyle`
 body{
@@ -84,6 +88,15 @@ const Title = () => {
       setTodos([...todos])
     }
   }
+
+  const EasterEgg = () => {
+    useKonami({
+      onUnlock: () => Sardoche.play(),
+      sequence: ['s', 'a', 'r', 'd', 'o', 'c', 'h', 'e'],
+    });
+    
+  }
+
   useEffect(() => {
     window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
   },[todos]);
@@ -97,6 +110,7 @@ const Title = () => {
       <>
       <GlobalStyle />
         <div className="Title">
+          <EasterEgg />
           <h1>todos</h1>
           <Bar addTodo={addTodo}/>
           <Todo changeTodo={changeTodo} completeTodo={completeTodo} setStatus={setStatus} setTodos={setTodos} todos={todos} filteredTodos={filteredTodos}/>
