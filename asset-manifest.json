@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/hamilton-6-react-intro-LunashaGit/static/css/main.5710fbc3.css",
-    "main.js": "/hamilton-6-react-intro-LunashaGit/static/js/main.76ba486c.js",
+    "main.js": "/hamilton-6-react-intro-LunashaGit/static/js/main.2b478025.js",
     "static/js/787.36ea19e1.chunk.js": "/hamilton-6-react-intro-LunashaGit/static/js/787.36ea19e1.chunk.js",
+    "static/media/SardocheEasterEgg.mp3": "/hamilton-6-react-intro-LunashaGit/static/media/SardocheEasterEgg.38fa226570bb9297219b.mp3",
     "index.html": "/hamilton-6-react-intro-LunashaGit/index.html",
     "main.5710fbc3.css.map": "/hamilton-6-react-intro-LunashaGit/static/css/main.5710fbc3.css.map",
-    "main.76ba486c.js.map": "/hamilton-6-react-intro-LunashaGit/static/js/main.76ba486c.js.map",
+    "main.2b478025.js.map": "/hamilton-6-react-intro-LunashaGit/static/js/main.2b478025.js.map",
     "787.36ea19e1.chunk.js.map": "/hamilton-6-react-intro-LunashaGit/static/js/787.36ea19e1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5710fbc3.css",
-    "static/js/main.76ba486c.js"
+    "static/js/main.2b478025.js"
   ]
 }
