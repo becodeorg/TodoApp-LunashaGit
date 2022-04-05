@@ -60,8 +60,26 @@ TodoList with React By Lunasha
     Completed => View completed tasks
     Uncompleted => View uncompleted tasks
 
+    Change the theme => Dark & Light
+
     And more later...
 
+## How everything work ? 
+    Task => Save in the localStorage with a key
+    Task = Checked: True/False, Completed: True/False, Name & UUID
+
+    Theme => Same like task
+    Theme = Theme: Dark/Light
+
+## Bugs ?
+    When a Key in the localStorage is deleted => Website Crash (Resolved)
+    
 ## Design 
 ![Design TodoList](./imgMD/design.png)
+![Design TodoList](./imgMD/designdark.png)
+
+## Easter Egg ?
+    Lunasha: Yes.
+             2 Easter Egg for the moment !
+
 
