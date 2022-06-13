@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/hamilton-6-react-intro-LunashaGit/static/css/main.a2755939.css",
-    "main.js": "/hamilton-6-react-intro-LunashaGit/static/js/main.40e6ca9a.js",
-    "static/js/787.36ea19e1.chunk.js": "/hamilton-6-react-intro-LunashaGit/static/js/787.36ea19e1.chunk.js",
-    "static/media/SardocheEasterEgg.mp3": "/hamilton-6-react-intro-LunashaGit/static/media/SardocheEasterEgg.38fa226570bb9297219b.mp3",
-    "index.html": "/hamilton-6-react-intro-LunashaGit/index.html",
-    "main.a2755939.css.map": "/hamilton-6-react-intro-LunashaGit/static/css/main.a2755939.css.map",
-    "main.40e6ca9a.js.map": "/hamilton-6-react-intro-LunashaGit/static/js/main.40e6ca9a.js.map",
-    "787.36ea19e1.chunk.js.map": "/hamilton-6-react-intro-LunashaGit/static/js/787.36ea19e1.chunk.js.map"
+    "main.css": "/TodoApp-LunashaGit/static/css/main.a2755939.css",
+    "main.js": "/TodoApp-LunashaGit/static/js/main.333cb437.js",
+    "static/js/787.36ea19e1.chunk.js": "/TodoApp-LunashaGit/static/js/787.36ea19e1.chunk.js",
+    "static/media/SardocheEasterEgg.mp3": "/TodoApp-LunashaGit/static/media/SardocheEasterEgg.38fa226570bb9297219b.mp3",
+    "index.html": "/TodoApp-LunashaGit/index.html",
+    "main.a2755939.css.map": "/TodoApp-LunashaGit/static/css/main.a2755939.css.map",
+    "main.333cb437.js.map": "/TodoApp-LunashaGit/static/js/main.333cb437.js.map",
+    "787.36ea19e1.chunk.js.map": "/TodoApp-LunashaGit/static/js/787.36ea19e1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a2755939.css",
-    "static/js/main.40e6ca9a.js"
+    "static/js/main.333cb437.js"
   ]
 }
